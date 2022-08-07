@@ -1,6 +1,6 @@
-import React, { useEffect, useState} from "react";
+import React, { useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUserGraduate} from '@fortawesome/free-solid-svg-icons'
+import { faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 import ItemCard from "../../../Geral/ItemCard";
 import Data from "../../../../Data/Data";
 

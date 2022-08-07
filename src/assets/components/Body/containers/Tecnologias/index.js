@@ -1,7 +1,7 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import ItemCard from "../../../Geral/ItemCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCubes} from '@fortawesome/free-solid-svg-icons'
+import { faCubes } from '@fortawesome/free-solid-svg-icons'
 import Data from "../../../../Data/Data";
 
 export default function Tecnologias() {

@@ -1,9 +1,5 @@
 class Data {
 
-    constructor(){
-
-    }
-
     empresas(){
 
         let empresas = [
@@ -14,14 +10,14 @@ class Data {
             text = text.split("\n")
             let fText = ""
             text.map((i)=>{
-                fText+="<p className=\"p\">"+i+"</p>"
+                return fText+="<p className=\"p\">"+i+"</p>"
             })
             console.log(fText)
             return fText
         }
 
         empresas.map((i)=>{
-            i.text = formatText(i.text)
+            return i.text = formatText(i.text)
         })
 
         return empresas
@@ -56,4 +52,4 @@ class Data {
 
 }
 
-module.exports = new Data
+module.exports = new Data()

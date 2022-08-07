@@ -1,9 +1,6 @@
 import React, { useEffect, useState} from "react";
-import ItemCard from "../../../Geral/ItemCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHouseChimney} from '@fortawesome/free-solid-svg-icons'
-
-import Modal from "../../../Geral/Modal";
 
 
 export default function Inicio() {
