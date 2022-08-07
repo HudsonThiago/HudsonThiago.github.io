@@ -6,7 +6,7 @@ import { faCubes } from '@fortawesome/free-solid-svg-icons'
 export default function Tecnologias() {
 
   const Data = require('../../../../Data/Data')
-  const [tecnologias, setTecnologias] = useState(Data.tecnologias())
+  const [tecnologias, setTecnologias] = useState(Data.tecnologias)
 
   return (
     <div className="box">

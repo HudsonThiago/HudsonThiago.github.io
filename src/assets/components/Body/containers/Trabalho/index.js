@@ -7,7 +7,7 @@ import Modal from "../../../Geral/Modal";
 export default function Tecnologias() {
 
   const Data = require('../../../../Data/Data')
-  const [empresas, setEmpresas] = useState(Data.empresas())
+  const [empresas, setEmpresas] = useState(Data.empresas)
 
   const openModal=(id)=>{
     const el = document.getElementById(id)

@@ -6,7 +6,7 @@ import ItemCard from "../../../Geral/ItemCard";
 export default function Formacao() {
 
   const Data = require('../../../../Data/Data')
-  const [formacao, setFormacao] = useState(Data.formacao())
+  const [formacao, setFormacao] = useState(Data.formacao)
 
   return (
     <div className="box">
