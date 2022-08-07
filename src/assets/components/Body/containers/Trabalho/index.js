@@ -2,11 +2,11 @@ import React, { useState} from "react";
 import ItemCard from "../../../Geral/ItemCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons'
-import Data from "../../../../Data/Data";
 import Modal from "../../../Geral/Modal";
 
 export default function Tecnologias() {
 
+  const Data = require('../../../../Data/Data')
   const [empresas, setEmpresas] = useState(Data.empresas())
 
   const openModal=(id)=>{
