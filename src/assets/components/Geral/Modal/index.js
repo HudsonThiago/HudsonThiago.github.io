@@ -7,12 +7,12 @@ import {faUserTie} from '@fortawesome/free-solid-svg-icons'
 
 export default function Modal({id, imagem, title, text, time, role, closeModal}) {
 
-  let el
-
-  // const textToHtml=()=>{
-  //   let fText = document.getElementById(`contentSec-${id}`)
-  //   fText.innerHTML = text
-  //   return fText;
+  // const stringToHTML=()=>{
+  //   const parser = new DOMParser();
+  //   const doc = parser.parseFromString(text, 'text/html');
+  //   console.log(doc.body.children[0])
+  //   const t = doc.body.children[0]
+  //   return t
   // }
 
   return (
@@ -31,7 +31,7 @@ export default function Modal({id, imagem, title, text, time, role, closeModal})
               <div><FontAwesomeIcon className="modalIcon" icon={faClock}/>{time}</div>
               <div><FontAwesomeIcon className="modalIcon" icon={faUserTie}/><div><p>{role}</p></div></div>
             </div>
-            <div className="contentSec" id={`contentSec-${id}`}>
+            <div className="contentSec">
               {text}
             </div>
           </main>

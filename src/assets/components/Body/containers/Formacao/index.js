@@ -2,11 +2,10 @@ import React, { useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 import ItemCard from "../../../Geral/ItemCard";
+import Data from '../../../../Data/formacao.json'
 
 export default function Formacao() {
-
-  const Data = require('../../../../Data/Data')
-  const [formacao, setFormacao] = useState(Data.formacao)
+  const [formacao, setFormacao] = useState(Data)
 
   return (
     <div className="box">

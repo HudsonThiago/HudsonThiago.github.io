@@ -3,24 +3,30 @@ import ItemCard from "../../../Geral/ItemCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import Modal from "../../../Geral/Modal";
+import Data from '../../../../Data/empresas.json'
 
 export default function Tecnologias() {
 
-  const Data = require('../../../../Data/Data')
-  const [empresas, setEmpresas] = useState(Data.empresas)
+  const [empresas, setEmpresas] = useState(Data)
+
+  const formatText=(text="")=>{
+    text = text.split("\n")
+    let fText = ""
+    text.map((i)=>{
+      return fText+="<p className=\"p\">"+i+"</p>"
+    })
+    fText="<div>"+fText+"</div>"
+    return fText
+  }
 
   const openModal=(id)=>{
     const el = document.getElementById(id)
     el.classList.add("openModal")
-
-    console.log(el)
   }
 
   const closeModal=(id)=>{
     const el = document.getElementById(id)
     el.classList.remove("openModal")
-
-    console.log(el)
   }
 
   return (
@@ -38,7 +44,7 @@ export default function Tecnologias() {
             empresas.map((i, index)=>{
               return (<div key={index}>
                 <ItemCard type={'image'} imagem={require(`../../../../images/trabalho/${i.image}`)} title={i.title} action={openModal} idModal={`modalEmpresa-${index}`} />
-                <Modal id={`modalEmpresa-${index}`} imagem={require(`../../../../images/backgrounds/${i.modalImage}`)} title={i.title} text={i.text} time={i.time} role={i.role} closeModal={closeModal}/>
+                <Modal id={`modalEmpresa-${index}`} imagem={require(`../../../../images/backgrounds/${i.modalImage}`)} title={i.title} text={formatText(i.text)} time={i.time} role={i.role} closeModal={closeModal}/>
               </div>
               )
             })

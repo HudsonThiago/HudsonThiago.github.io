@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import ItemCard from "../../../Geral/ItemCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCubes } from '@fortawesome/free-solid-svg-icons'
+import Data from '../../../../Data/tecnologias.json'
 
 export default function Tecnologias() {
 
-  const Data = require('../../../../Data/Data')
-  const [tecnologias, setTecnologias] = useState(Data.tecnologias)
+  const [tecnologias, setTecnologias] = useState(Data)
 
   return (
     <div className="box">
