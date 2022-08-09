@@ -1,6 +1,5 @@
 import React, { useEffect, useState} from 'react';
 import './style/style.css'
-import WindowDimensions from '../Geral/WindowDimensions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHouseChimney} from '@fortawesome/free-solid-svg-icons'
 import {faUserGraduate} from '@fortawesome/free-solid-svg-icons'
@@ -15,8 +14,6 @@ import Portfolio from './containers/Portfolio';
 import Inicio from './containers/Inicio';
 
 export default function Body({screen}) {
-
-  const { height, width } = WindowDimensions();
 
   const Box=()=>{
     switch(screen){
@@ -35,7 +32,7 @@ export default function Body({screen}) {
 
   return (
     <section id="sec-3">
-      <div className="container" style={{width: `calc(${width}-560)`}}>
+      <div className="container">
         {Box()}
       </div>
     </section>
