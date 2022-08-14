@@ -20,8 +20,8 @@ export default function Tecnologias() {
         </header>
         <main className="mainBody">
             {
-              tecnologias.map((i)=>{
-                return <ItemCard type={'image'} imagem={require(`../../../../images/tecnologias/${i.image}`)} title={i.title} />
+              tecnologias.map((i, index)=>{
+                return <ItemCard key={index} type={'image'} imagem={require(`../../../../images/tecnologias/${i.image}`)} title={i.title} />
               })
             }
         </main>

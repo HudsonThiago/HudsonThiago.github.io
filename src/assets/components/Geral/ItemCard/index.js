@@ -12,19 +12,24 @@ export default function ItemCard({type, imagem, porcentagem, title, text, action
     let cx = 30
     let cy = 30
     let r = 30
+    let dasharray=185
     if(width > 1200){
       cx=30
       cy=30
-    } else if(width > 900 && width <= 1200){
-      cx=25
-      cy=25
-      r=25
+      dasharray=185
+    } else {
+      cx=20
+      cy=20
+      r=20
+      dasharray=125
     }
 
     if(axis=="x"){
       return cx
     } else if(axis=="y"){
       return cy
+    } else if(axis=="dasharray"){
+      return dasharray
     } else {
       return r
     }
@@ -37,7 +42,7 @@ export default function ItemCard({type, imagem, porcentagem, title, text, action
         <div className="circleItem">
           <svg>
             <circle cx={dimension("x")} cy={dimension("x")} r={dimension("r")}></circle>
-            <circle cx={dimension("x")} cy={dimension("x")} r={dimension("r")} style={{strokeDashoffset: `calc(185 - (185 * ${porcentagem})/100)`}}></circle>
+            <circle cx={dimension("x")} cy={dimension("x")} r={dimension("r")} style={{strokeDashoffset: `calc(${dimension("dasharray")} - (${dimension("dasharray")} * ${porcentagem})/100)`}}></circle>
           </svg>
           <div className="number"><h3>{porcentagem}%</h3></div>
         </div>

@@ -21,8 +21,8 @@ export default function Formacao() {
       </header>
       <main className="mainBody">
         {
-          formacao.map((i)=>{
-            return <ItemCard type="percentual" porcentagem={i.percent} title={i.title} text={i.text} />
+          formacao.map((i, index)=>{
+            return <ItemCard key={index} type="percentual" porcentagem={i.percent} title={i.title} text={i.text} />
           })
         }
       </main>

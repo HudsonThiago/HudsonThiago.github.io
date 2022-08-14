@@ -148,7 +148,7 @@
     background: linear-gradient(180deg, var(--glassBg30) 0%, var(--glassBg0) 100%);
     width: 360px;
     height: 380px;
-    padding: 2rem;
+    padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,7 +172,7 @@
             align-items: center;
   }
   #sec-3 .container .box .headerBody .headerBox {
-    margin-top: -60px;
+    margin-top: -50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -189,8 +189,8 @@
   }
   #sec-3 .container .box .headerBody .headerBox .CircleHeader {
     background-color: var(--white);
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
     position: relative;
     display: -webkit-box;
@@ -206,7 +206,7 @@
             box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
   }
   #sec-3 .container .box .headerBody .headerBox .CircleHeader .navIcon {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: var(--red1);
     -webkit-filter: drop-shadow(0px 2px 1px #00000066);
             filter: drop-shadow(0px 2px 1px #00000066);
@@ -267,7 +267,7 @@
     background: linear-gradient(180deg, var(--glassBg30) 0%, var(--glassBg0) 100%);
     width: 500px;
     height: 440px;
-    padding: 2rem;
+    padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -291,7 +291,7 @@
             align-items: center;
   }
   #sec-3 .container .box .headerBody .headerBox {
-    margin-top: -60px;
+    margin-top: -50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -387,7 +387,7 @@
     margin: 0 5%;
     width: 90%;
     height: 440px;
-    padding: 2rem;
+    padding: 0.4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -411,7 +411,7 @@
             align-items: center;
   }
   #sec-3 .container .box .headerBody .headerBox {
-    margin-top: -60px;
+    margin-top: -40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
