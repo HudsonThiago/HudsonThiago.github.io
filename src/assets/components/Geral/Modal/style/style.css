@@ -154,15 +154,11 @@
   scrollbar-color: var(--glassBg50);
 }
 
-.darkScreen .modalContent .modalSec55 .modalMain .contentSec .p {
+.darkScreen .modalContent .modalSec55 .modalMain .contentSec p {
   color: var(--text);
   text-indent: 24px;
   margin-bottom: 16px;
   margin-right: 16px;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .contentSec .p:last-child {
-  margin-bottom: 0px;
 }
 
 .darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar {
@@ -307,14 +303,11 @@
     scrollbar-width: thin;
     scrollbar-color: var(--glassBg50);
   }
-  .darkScreen .modalContent .modalSec55 .modalMain .contentSec .p {
+  .darkScreen .modalContent .modalSec55 .modalMain .contentSec p {
     color: var(--text);
     text-indent: 24px;
     margin-bottom: 16px;
     margin-right: 16px;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .contentSec .p:last-child {
-    margin-bottom: 0px;
   }
   .darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar {
     width: 4px;

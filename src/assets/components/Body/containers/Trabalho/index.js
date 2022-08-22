@@ -13,9 +13,8 @@ export default function Tecnologias() {
     text = text.split("\n")
     let fText = ""
     text.map((i)=>{
-      return fText+="<p className=\"p\">"+i+"</p>"
+      return fText+="<p>"+i+"</p>"
     })
-    fText="<div>"+fText+"</div>"
     return fText
   }
 

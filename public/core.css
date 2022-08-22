@@ -16,8 +16,8 @@
   --bw6: #999999;
 
   /* COLORS */
-  --red: #ff5050;
-  --red1: #c33333;
+  --red: #ff5858;
+  --red1: #d43737;
   --redT: #FF353C99;
   --orange: #EF8347;
   --orangeT: #F3714199;
@@ -28,6 +28,7 @@
   /* FONTS */
   --primary: #ffffff;
   --title: #808080;
+  --title2: #ff7d38;
   --subtitle: #B3B3B3;
   --text: #808080;
 

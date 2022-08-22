@@ -21,7 +21,7 @@ export default function Tecnologias() {
         <main className="mainBody">
             {
               tecnologias.map((i, index)=>{
-                return <ItemCard key={index} type={'image'} imagem={require(`../../../../images/tecnologias/${i.image}`)} title={i.title} />
+                return <ItemCard key={index} type={'image'} imagem={require(`../../../../images/tecnologias/${i.image}`)} title={i.title} experience={i.experience} />
               })
             }
         </main>

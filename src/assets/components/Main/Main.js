@@ -5,7 +5,7 @@ import Body from '../Body/Body'
 
 export default function Main() {
 
-  const [screen, setScreen] = useState(2)
+  const [screen, setScreen] = useState(1)
 
   const activeButton=(id)=>{
 

@@ -31,9 +31,7 @@ export default function Modal({id, imagem, title, text, time, role, closeModal})
               <div><FontAwesomeIcon className="modalIcon" icon={faClock}/>{time}</div>
               <div><FontAwesomeIcon className="modalIcon" icon={faUserTie}/><div><p>{role}</p></div></div>
             </div>
-            <div className="contentSec">
-              {text}
-            </div>
+            <div className="contentSec" dangerouslySetInnerHTML={{__html: text}}></div>
           </main>
         </div>
       </div>

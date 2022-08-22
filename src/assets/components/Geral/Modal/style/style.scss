@@ -109,14 +109,11 @@
                     scrollbar-width: thin;
                     scrollbar-color: var(--glassBg50);
 
-                    .p {
+                    p {
                         color: var(--text);
                         text-indent: 24px;
                         margin-bottom: 16px;
                         margin-right: 16px;
-                    }
-                    .p:last-child {
-                        margin-bottom: 0px;
                     }
                 }
     
@@ -242,15 +239,12 @@
                         overflow-y: auto;
                         scrollbar-width: thin;
                         scrollbar-color: var(--glassBg50);
-    
-                        .p {
+                        
+                        p {
                             color: var(--text);
                             text-indent: 24px;
                             margin-bottom: 16px;
                             margin-right: 16px;
-                        }
-                        .p:last-child {
-                            margin-bottom: 0px;
                         }
                     }
         

@@ -4,7 +4,7 @@ import './style/style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
-export default function ItemCard({type, imagem, porcentagem, title, text, action, idModal}) {
+export default function ItemCard({type, imagem, porcentagem, title, text, experience, action, idModal}) {
   const { height, width } = WindowDimensions();
 
   const dimension=(axis)=>{
@@ -24,15 +24,43 @@ export default function ItemCard({type, imagem, porcentagem, title, text, action
       dasharray=125
     }
 
-    if(axis=="x"){
+    if(axis==="x"){
       return cx
-    } else if(axis=="y"){
+    } else if(axis==="y"){
       return cy
-    } else if(axis=="dasharray"){
+    } else if(axis==="dasharray"){
       return dasharray
     } else {
       return r
     }
+  }
+
+  const experienceBox=()=>{
+    let e, div;
+    switch(experience){
+      case 1:
+        e = "pouca prática"
+        div = <><div><div className="active"></div></div><div></div><div></div></>
+        break
+      case 2:
+        e = "boa prática"
+        div = <><div><div className="active"></div></div><div><div className="active"></div></div><div></div></>
+        break
+      case 3:
+        e = "muita prática"
+        div = <><div><div className="active"></div></div><div><div className="active"></div></div><div><div className="active"></div></div></>
+        break
+      default:
+        e = "boa prática"
+        div = <><div><div className="active"></div></div><div><div className="active"></div></div><div></div></>
+    }
+
+    return (<div className="Experience">
+      <p>{e}</p>
+      <div className="mainE">
+        {div}
+      </div>
+    </div>)
   }
 
   const Box=()=>{
@@ -77,7 +105,14 @@ export default function ItemCard({type, imagem, porcentagem, title, text, action
                 :null
               }
             </div>
-              <p>{text}</p>
+              {
+                experience
+                ?experienceBox()
+                :text
+                  ?<p>{text}</p>
+                  :null
+              }
+              
             </div>
           </div>
         </>
