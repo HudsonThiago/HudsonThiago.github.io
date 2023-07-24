@@ -1,4 +1,14 @@
 [
-    {"id":1,"percent":"100","title":"Curso Técnico em Informática","text":"CE EDUC PROFIS SEN JESSE PINTO FREIRE CENEP"},
-    {"id":2,"percent":"24","title":"Bacharelado em Tecnologia da Informação","text":"UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE"}
+    {
+        "id": 1,
+        "percent": "100",
+        "title": "Curso Técnico em Informática",
+        "text": "CE EDUC PROFIS SEN JESSE PINTO FREIRE CENEP"
+    },
+    {
+        "id": 2,
+        "percent": "35",
+        "title": "Bacharelado em Tecnologia da Informação",
+        "text": "UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE"
+    }
 ]

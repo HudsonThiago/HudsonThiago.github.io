@@ -1,11 +1,10 @@
 [
-    {"id":1,"image":"django.png","title":"Django & Rest","experience":3},
-    {"id":2,"image":"react.png","title":"React","experience":3},
-    {"id":3,"image":"git.png","title":"Git & GitHub","experience":3},
-    {"id":4,"image":"html.png","title":"HTML","experience":3},
-    {"id":5,"image":"css.png","title":"CSS","experience":3},
-    {"id":6,"image":"javascript.png","title":"JavaScript","experience":2},
-    {"id":7,"image":"python.png","title":"Python","experience":2},
-    {"id":8,"image":"figma.png","title":"Figma","experience":2},
-    {"id":9,"image":"c.png","title":"C#","experience":1}
+    { "id": 1, "image": "django.png", "title": "Django | Django Rest" },
+    { "id": 2, "image": "react.png", "title": "React" },
+    { "id": 3, "image": "git.png", "title": "Git & GitHub" },
+    { "id": 4, "image": "html.png", "title": "HTML" },
+    { "id": 5, "image": "css.png", "title": "CSS" },
+    { "id": 6, "image": "javascript.png", "title": "JavaScript" },
+    { "id": 7, "image": "figma.png", "title": "Figma" },
+    { "id": 8, "image": "c.png", "title": "C#" }
 ]

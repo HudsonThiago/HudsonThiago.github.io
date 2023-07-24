@@ -4,13 +4,17 @@
 
     .container {
         height: 100vh;
-        margin-left:560px;
+        margin-left: 560px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .box {
-            background: linear-gradient(180deg, var(--glassBg30) 0%, var(--glassBg0) 100%);
+            background: linear-gradient(
+                180deg,
+                var(--glassBg30) 0%,
+                var(--glassBg0) 100%
+            );
             width: 500px;
             height: 440px;
             padding: 2rem;
@@ -24,8 +28,7 @@
                 flex-direction: column;
                 align-items: center;
 
-                .headerBox{
-                    
+                .headerBox {
                     margin-top: -60px;
                     display: flex;
                     flex-direction: column;
@@ -58,7 +61,7 @@
                 }
             }
 
-            .mainBody{
+            .mainBody {
                 box-sizing: border-box;
                 width: 100%;
                 height: 80%;
@@ -66,17 +69,59 @@
                 overflow-y: auto;
                 scrollbar-width: thin;
                 scrollbar-color: var(--glassBg50);
+
+                .mainTextBox {
+                    width: auto;
+                    margin: 0px 20px;
+                    margin-top: -20px;
+
+                    p {
+                        font-size: 0.8rem;
+                        color: var(--text);
+                        text-align: center;
+                        word-spacing: 1px;
+                    }
+
+                    .buttonContent {
+                        display: flex;
+                        justify-content: center;
+
+                        .curriculoButton {
+                            width: 200px;
+                            margin: 0px auto;
+                            margin-top: 40px;
+                            color: var(--orange);
+                            font-weight: 500;
+                            background-color: #ffffff96;
+                            border: none;
+                            padding: 6px;
+                            transition: 0.3s;
+                            border-radius: 10px;
+                            box-shadow: 1px 1px 1px #00000066;
+                            cursor: pointer;
+
+                            .buttonIcon {
+                                font-size: 1rem;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .curriculoButton:hover {
+                            color: var(--red1);
+                        }
+                    }
+                }
             }
 
             main::-webkit-scrollbar {
                 width: 6px;
             }
-            
+
             main::-webkit-scrollbar-track {
                 background: transparent;
                 margin-top: 20px;
             }
-            
+
             main::-webkit-scrollbar-thumb {
                 background-color: var(--glassBg30);
                 border-radius: 20px;
@@ -93,37 +138,40 @@
     #sec-3 {
         width: 100%;
         height: 100vh;
-    
+
         .container {
             height: 100vh;
-            margin-left:400px;
+            margin-left: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
-    
+
             .box {
-                background: linear-gradient(180deg, var(--glassBg30) 0%, var(--glassBg0) 100%);
+                background: linear-gradient(
+                    180deg,
+                    var(--glassBg30) 0%,
+                    var(--glassBg0) 100%
+                );
                 width: 360px;
                 height: 380px;
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
-    
+
                 .headerBody {
                     width: 100%;
                     height: 20%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
-                    .headerBox{
-                        
+
+                    .headerBox {
                         margin-top: -50px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-    
+
                         .CircleHeader {
                             background-color: var(--white);
                             width: 70px;
@@ -133,15 +181,16 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-    
+                            box-shadow: 1px 1px 2px #00000066,
+                                2px 2px 5px #00000066;
+
                             .navIcon {
                                 font-size: 2.2rem;
                                 color: var(--red1);
                                 filter: drop-shadow(0px 2px 1px #00000066);
                             }
                         }
-    
+
                         h2 {
                             margin-top: 10px;
                             color: var(--white);
@@ -149,8 +198,8 @@
                         }
                     }
                 }
-    
-                .mainBody{
+
+                .mainBody {
                     box-sizing: border-box;
                     width: 100%;
                     height: 80%;
@@ -159,16 +208,16 @@
                     scrollbar-width: thin;
                     scrollbar-color: var(--glassBg50);
                 }
-    
+
                 main::-webkit-scrollbar {
                     width: 6px;
                 }
-                
+
                 main::-webkit-scrollbar-track {
                     background: transparent;
                     margin-top: 20px;
                 }
-                
+
                 main::-webkit-scrollbar-thumb {
                     background-color: var(--glassBg30);
                     border-radius: 20px;
@@ -186,38 +235,41 @@
     #sec-3 {
         width: 100%;
         height: unset;
-    
+
         .container {
             margin-top: 340px;
-            margin-left:0px;
+            margin-left: 0px;
             height: 600px;
             display: flex;
             justify-content: center;
             align-items: unset;
-    
+
             .box {
-                background: linear-gradient(180deg, var(--glassBg30) 0%, var(--glassBg0) 100%);
+                background: linear-gradient(
+                    180deg,
+                    var(--glassBg30) 0%,
+                    var(--glassBg0) 100%
+                );
                 width: 500px;
                 height: 440px;
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
-    
+
                 .headerBody {
                     width: 100%;
                     height: 20%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
-                    .headerBox{
-                        
+
+                    .headerBox {
                         margin-top: -50px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-    
+
                         .CircleHeader {
                             background-color: var(--white);
                             width: 80px;
@@ -227,15 +279,16 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-    
+                            box-shadow: 1px 1px 2px #00000066,
+                                2px 2px 5px #00000066;
+
                             .navIcon {
                                 font-size: 2.4rem;
                                 color: var(--red1);
                                 filter: drop-shadow(0px 2px 1px #00000066);
                             }
                         }
-    
+
                         h2 {
                             margin-top: 10px;
                             color: var(--white);
@@ -243,8 +296,8 @@
                         }
                     }
                 }
-    
-                .mainBody{
+
+                .mainBody {
                     box-sizing: border-box;
                     width: 100%;
                     height: 80%;
@@ -252,17 +305,30 @@
                     overflow-y: auto;
                     scrollbar-width: thin;
                     scrollbar-color: var(--glassBg50);
+
+                    .mainTextBox {
+                        width: auto;
+                        margin: 0px 40px;
+                        margin-top: -20px;
+
+                        p {
+                            font-size: 0.8rem;
+                            color: var(--text);
+                            text-align: center;
+                            word-spacing: 1px;
+                        }
+                    }
                 }
-    
+
                 main::-webkit-scrollbar {
                     width: 6px;
                 }
-                
+
                 main::-webkit-scrollbar-track {
                     background: transparent;
                     margin-top: 20px;
                 }
-                
+
                 main::-webkit-scrollbar-thumb {
                     background-color: var(--glassBg30);
                     border-radius: 20px;
@@ -280,39 +346,42 @@
     #sec-3 {
         width: 100%;
         height: unset;
-    
+
         .container {
             margin-top: 340px;
-            margin-left:0px;
+            margin-left: 0px;
             height: 560px;
             display: flex;
             justify-content: center;
             align-items: unset;
-    
+
             .box {
-                background: linear-gradient(180deg, var(--glassBg30) 0%, var(--glassBg0) 100%);
+                background: linear-gradient(
+                    180deg,
+                    var(--glassBg30) 0%,
+                    var(--glassBg0) 100%
+                );
                 margin: 0 5%;
                 width: 90%;
                 height: 440px;
                 padding: 0.4rem;
                 display: flex;
                 flex-direction: column;
-    
+
                 .headerBody {
                     width: 100%;
                     height: 20%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
-                    .headerBox{
-                        
+
+                    .headerBox {
                         margin-top: -40px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-    
+
                         .CircleHeader {
                             background-color: var(--white);
                             width: 80px;
@@ -322,15 +391,16 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-    
+                            box-shadow: 1px 1px 2px #00000066,
+                                2px 2px 5px #00000066;
+
                             .navIcon {
                                 font-size: 2.4rem;
                                 color: var(--red1);
                                 filter: drop-shadow(0px 2px 1px #00000066);
                             }
                         }
-    
+
                         h2 {
                             margin-top: 10px;
                             color: var(--white);
@@ -338,8 +408,8 @@
                         }
                     }
                 }
-    
-                .mainBody{
+
+                .mainBody {
                     box-sizing: border-box;
                     width: 100%;
                     height: 80%;
@@ -348,16 +418,16 @@
                     scrollbar-width: thin;
                     scrollbar-color: var(--glassBg50);
                 }
-    
+
                 main::-webkit-scrollbar {
                     width: 6px;
                 }
-                
+
                 main::-webkit-scrollbar-track {
                     background: transparent;
                     margin-top: 20px;
                 }
-                
+
                 main::-webkit-scrollbar-thumb {
                     background-color: var(--glassBg30);
                     border-radius: 20px;
@@ -371,44 +441,46 @@
     }
 }
 
-
 @media only screen and (max-width: 500px) {
     #sec-3 {
         width: 100%;
         height: unset;
-    
+
         .container {
             margin-top: 240px;
-            margin-left:0px;
+            margin-left: 0px;
             height: 400px;
             display: flex;
             justify-content: center;
             align-items: unset;
-    
+
             .box {
-                background: linear-gradient(180deg, var(--glassBg30) 0%, var(--glassBg0) 100%);
+                background: linear-gradient(
+                    180deg,
+                    var(--glassBg30) 0%,
+                    var(--glassBg0) 100%
+                );
                 margin: 0 5%;
                 width: 90%;
                 height: 400px;
                 padding: 0.4rem;
                 display: flex;
                 flex-direction: column;
-    
+
                 .headerBody {
                     width: 100%;
                     height: 20%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
-                    .headerBox{
-                        
+
+                    .headerBox {
                         margin-top: -35px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-    
+
                         .CircleHeader {
                             background-color: var(--white);
                             width: 60px;
@@ -418,15 +490,16 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-    
+                            box-shadow: 1px 1px 2px #00000066,
+                                2px 2px 5px #00000066;
+
                             .navIcon {
                                 font-size: 1.8rem;
                                 color: var(--red1);
                                 filter: drop-shadow(0px 2px 1px #00000066);
                             }
                         }
-    
+
                         h2 {
                             margin-top: 10px;
                             color: var(--white);
@@ -434,8 +507,8 @@
                         }
                     }
                 }
-    
-                .mainBody{
+
+                .mainBody {
                     box-sizing: border-box;
                     width: 100%;
                     height: 80%;
@@ -443,17 +516,60 @@
                     overflow-y: auto;
                     scrollbar-width: thin;
                     scrollbar-color: var(--glassBg50);
+
+                    .mainTextBox {
+                        width: auto;
+                        margin: 0px 10px;
+                        margin-top: -20px;
+
+                        p {
+                            font-size: 0.6rem;
+                            color: var(--text);
+                            text-align: center;
+                            word-spacing: 1px;
+                        }
+
+                        .buttonContent {
+                            display: flex;
+                            justify-content: center;
+
+                            .curriculoButton {
+                                width: 160px;
+                                margin: 0px auto;
+                                margin-top: 20px;
+                                color: var(--orange);
+                                font-size: 0.6rem;
+                                font-weight: 500;
+                                background-color: #ffffff96;
+                                border: none;
+                                padding: 4px;
+                                transition: 0.3s;
+                                border-radius: 10px;
+                                box-shadow: 1px 1px 1px #00000066;
+                                cursor: pointer;
+
+                                .buttonIcon {
+                                    font-size: 0.8rem;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .curriculoButton:hover {
+                                color: var(--red1);
+                            }
+                        }
+                    }
                 }
-    
+
                 main::-webkit-scrollbar {
                     width: 6px;
                 }
-                
+
                 main::-webkit-scrollbar-track {
                     background: transparent;
                     margin-top: 20px;
                 }
-                
+
                 main::-webkit-scrollbar-thumb {
                     background-color: var(--glassBg30);
                     border-radius: 20px;

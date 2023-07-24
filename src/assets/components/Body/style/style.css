@@ -107,6 +107,54 @@
   scrollbar-color: var(--glassBg50);
 }
 
+#sec-3 .container .box .mainBody .mainTextBox {
+  width: auto;
+  margin: 0px 20px;
+  margin-top: -20px;
+}
+
+#sec-3 .container .box .mainBody .mainTextBox p {
+  font-size: 0.8rem;
+  color: var(--text);
+  text-align: center;
+  word-spacing: 1px;
+}
+
+#sec-3 .container .box .mainBody .mainTextBox .buttonContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sec-3 .container .box .mainBody .mainTextBox .buttonContent .curriculoButton {
+  width: 200px;
+  margin: 0px auto;
+  margin-top: 40px;
+  color: var(--orange);
+  font-weight: 500;
+  background-color: #ffffff96;
+  border: none;
+  padding: 6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 1px #00000066;
+          box-shadow: 1px 1px 1px #00000066;
+  cursor: pointer;
+}
+
+#sec-3 .container .box .mainBody .mainTextBox .buttonContent .curriculoButton .buttonIcon {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+#sec-3 .container .box .mainBody .mainTextBox .buttonContent .curriculoButton:hover {
+  color: var(--red1);
+}
+
 #sec-3 .container .box main::-webkit-scrollbar {
   width: 6px;
 }
@@ -202,8 +250,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
   }
   #sec-3 .container .box .headerBody .headerBox .CircleHeader .navIcon {
     font-size: 2.2rem;
@@ -321,8 +369,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
   }
   #sec-3 .container .box .headerBody .headerBox .CircleHeader .navIcon {
     font-size: 2.4rem;
@@ -344,6 +392,17 @@
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--glassBg50);
+  }
+  #sec-3 .container .box .mainBody .mainTextBox {
+    width: auto;
+    margin: 0px 40px;
+    margin-top: -20px;
+  }
+  #sec-3 .container .box .mainBody .mainTextBox p {
+    font-size: 0.8rem;
+    color: var(--text);
+    text-align: center;
+    word-spacing: 1px;
   }
   #sec-3 .container .box main::-webkit-scrollbar {
     width: 6px;
@@ -441,8 +500,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
   }
   #sec-3 .container .box .headerBody .headerBox .CircleHeader .navIcon {
     font-size: 2.4rem;
@@ -561,8 +620,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
   }
   #sec-3 .container .box .headerBody .headerBox .CircleHeader .navIcon {
     font-size: 1.8rem;
@@ -584,6 +643,49 @@
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--glassBg50);
+  }
+  #sec-3 .container .box .mainBody .mainTextBox {
+    width: auto;
+    margin: 0px 10px;
+    margin-top: -20px;
+  }
+  #sec-3 .container .box .mainBody .mainTextBox p {
+    font-size: 0.6rem;
+    color: var(--text);
+    text-align: center;
+    word-spacing: 1px;
+  }
+  #sec-3 .container .box .mainBody .mainTextBox .buttonContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #sec-3 .container .box .mainBody .mainTextBox .buttonContent .curriculoButton {
+    width: 160px;
+    margin: 0px auto;
+    margin-top: 20px;
+    color: var(--orange);
+    font-size: 0.6rem;
+    font-weight: 500;
+    background-color: #ffffff96;
+    border: none;
+    padding: 4px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 1px #00000066;
+            box-shadow: 1px 1px 1px #00000066;
+    cursor: pointer;
+  }
+  #sec-3 .container .box .mainBody .mainTextBox .buttonContent .curriculoButton .buttonIcon {
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+  #sec-3 .container .box .mainBody .mainTextBox .buttonContent .curriculoButton:hover {
+    color: var(--red1);
   }
   #sec-3 .container .box main::-webkit-scrollbar {
     width: 6px;
