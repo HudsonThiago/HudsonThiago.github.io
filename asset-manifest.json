@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.118a90fd.css",
-    "main.js": "/static/js/main.e03da624.js",
+    "main.css": "/static/css/main.1f6314f0.css",
+    "main.js": "/static/js/main.574b731a.js",
     "static/js/787.3b86ad0b.chunk.js": "/static/js/787.3b86ad0b.chunk.js",
     "static/media/trabalhoModal1.jpg": "/static/media/trabalhoModal1.415b9236d0c667190c24.jpg",
+    "static/media/neoenergia_labs.png": "/static/media/neoenergia_labs.ad1777baecb096e3cd6c.png",
+    "static/media/curriculo.pdf": "/static/media/curriculo.6565d55ec060b8d52c97.pdf",
     "static/media/profile.jpg": "/static/media/profile.5512d95d0deaabf1364f.jpg",
     "static/media/blender.png": "/static/media/blender.7c074de59623026ea3d9.png",
     "static/media/django.png": "/static/media/django.a66ffa8038525df839cc.png",
@@ -14,12 +16,12 @@
     "static/media/css.png": "/static/media/css.4a513626f10b8419c668.png",
     "static/media/react.png": "/static/media/react.16427f7cb38d0bc1ae93.png",
     "index.html": "/index.html",
-    "main.118a90fd.css.map": "/static/css/main.118a90fd.css.map",
-    "main.e03da624.js.map": "/static/js/main.e03da624.js.map",
+    "main.1f6314f0.css.map": "/static/css/main.1f6314f0.css.map",
+    "main.574b731a.js.map": "/static/js/main.574b731a.js.map",
     "787.3b86ad0b.chunk.js.map": "/static/js/787.3b86ad0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.118a90fd.css",
-    "static/js/main.e03da624.js"
+    "static/css/main.1f6314f0.css",
+    "static/js/main.574b731a.js"
   ]
 }
