@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f6314f0.css",
-    "main.js": "/static/js/main.574b731a.js",
+    "main.css": "/static/css/main.d95618f6.css",
+    "main.js": "/static/js/main.b540131b.js",
     "static/js/787.3b86ad0b.chunk.js": "/static/js/787.3b86ad0b.chunk.js",
     "static/media/trabalhoModal1.jpg": "/static/media/trabalhoModal1.415b9236d0c667190c24.jpg",
     "static/media/neoenergia_labs.png": "/static/media/neoenergia_labs.ad1777baecb096e3cd6c.png",
@@ -16,12 +16,12 @@
     "static/media/css.png": "/static/media/css.4a513626f10b8419c668.png",
     "static/media/react.png": "/static/media/react.16427f7cb38d0bc1ae93.png",
     "index.html": "/index.html",
-    "main.1f6314f0.css.map": "/static/css/main.1f6314f0.css.map",
-    "main.574b731a.js.map": "/static/js/main.574b731a.js.map",
+    "main.d95618f6.css.map": "/static/css/main.d95618f6.css.map",
+    "main.b540131b.js.map": "/static/js/main.b540131b.js.map",
     "787.3b86ad0b.chunk.js.map": "/static/js/787.3b86ad0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f6314f0.css",
-    "static/js/main.574b731a.js"
+    "static/css/main.d95618f6.css",
+    "static/js/main.b540131b.js"
   ]
 }
