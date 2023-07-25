@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ItemCard from "../../../Geral/ItemCard";
+import ItemCard from "../../../Utils/ItemCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCubes } from "@fortawesome/free-solid-svg-icons";
 import Data from "../../../../Data/tecnologias.json";

@@ -106,9 +106,15 @@
           align-items: center;
   font-size: 1.2rem;
   color: var(--title);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.darkScreen .modalContent .modalSec55 .modalHeader .closeButton:hover {
+  color: var(--red1);
 }
 
 .darkScreen .modalContent .modalSec55 .modalMain {
@@ -121,57 +127,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .iconSec {
-  height: 20%;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .iconSec div {
-  margin-top: 4px;
-  color: var(--subtitle);
-  font-size: 0.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .iconSec div .modalIcon {
-  color: var(--red1);
-  margin-right: 8px;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .contentSec {
-  margin-top: 16px;
-  font-size: 0.8rem;
-  height: 80%;
-  text-align: justify;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: var(--glassBg50);
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .contentSec p {
-  color: var(--text);
-  text-indent: 24px;
-  margin-bottom: 16px;
-  margin-right: 16px;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar {
-  width: 4px;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar-thumb {
-  background-color: var(--title);
-  border-radius: 20px;
+  scrollbar-color: var(--text);
 }
 
 .openModal {
@@ -179,7 +137,7 @@
   opacity: 1 !important;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .darkScreen .modalContent {
     background-color: var(--white);
     width: 90%;
@@ -275,49 +233,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .iconSec {
-    height: 15%;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .iconSec div {
-    margin-top: 4px;
-    color: var(--subtitle);
-    font-size: 0.8rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .iconSec div .modalIcon {
-    color: var(--red1);
-    margin-right: 8px;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .contentSec {
-    margin-top: 16px;
-    font-size: 0.8rem;
-    height: 85%;
-    text-align: justify;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: var(--glassBg50);
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .contentSec p {
-    color: var(--text);
-    text-indent: 24px;
-    margin-bottom: 16px;
-    margin-right: 16px;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar {
-    width: 4px;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .darkScreen .modalContent .modalSec55 .modalMain .contentSec::-webkit-scrollbar-thumb {
-    background-color: var(--title);
-    border-radius: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

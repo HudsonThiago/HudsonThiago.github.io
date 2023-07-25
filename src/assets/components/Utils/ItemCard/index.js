@@ -1,5 +1,5 @@
 import React from "react";
-import WindowDimensions from "../../Geral/WindowDimensions";
+import WindowDimensions from "../../Utils/WindowDimensions";
 import "./style/style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";

@@ -1,31 +1,15 @@
 import React, { useState } from "react";
-import ItemCard from "../../../Geral/ItemCard";
+import ItemCard from "../../../Utils/ItemCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import Modal from "../../../Geral/Modal";
+import Modal from "../../../Utils/Modal";
 import Data from "../../../../Data/empresas.json";
+import { openModal } from "../../../Utils/Modal";
+import ExperienciasContainer from "../../../Utils/Modal/containers/ExperienciasContainer";
+import { formatText } from "../../../Utils/utils";
 
 export default function Tecnologias() {
     const [empresas, setEmpresas] = useState(Data);
-
-    const formatText = (text = "") => {
-        text = text.split("\n");
-        let fText = "";
-        text.map((i) => {
-            return (fText += "<p>" + i + "</p>");
-        });
-        return fText;
-    };
-
-    const openModal = (id) => {
-        const el = document.getElementById(id);
-        el.classList.add("openModal");
-    };
-
-    const closeModal = (id) => {
-        const el = document.getElementById(id);
-        el.classList.remove("openModal");
-    };
 
     return (
         <div className="box">
@@ -55,11 +39,13 @@ export default function Tecnologias() {
                                 id={`modalEmpresa-${index}`}
                                 imagem={require(`../../../../images/backgrounds/${i.modalImage}`)}
                                 title={i.title}
-                                text={formatText(i.text)}
-                                time={i.time}
-                                role={i.role}
-                                closeModal={closeModal}
-                            />
+                            >
+                                <ExperienciasContainer
+                                    roles={i.role}
+                                    time={i.time}
+                                    text={formatText(i.text)}
+                                />
+                            </Modal>
                         </div>
                     );
                 })}

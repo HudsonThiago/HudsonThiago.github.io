@@ -140,7 +140,7 @@
   padding: 6px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 6px;
   -webkit-box-shadow: 1px 1px 1px #00000066;
           box-shadow: 1px 1px 1px #00000066;
   cursor: pointer;
@@ -152,7 +152,7 @@
 }
 
 #sec-3 .container .box .mainBody .mainTextBox .buttonContent .curriculoButton:hover {
-  color: var(--red1);
+  color: var(--red);
 }
 
 #sec-3 .container .box main::-webkit-scrollbar {

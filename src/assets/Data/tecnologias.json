@@ -2,9 +2,9 @@
     { "id": 1, "image": "django.png", "title": "Django | Django Rest" },
     { "id": 2, "image": "react.png", "title": "React" },
     { "id": 3, "image": "git.png", "title": "Git & GitHub" },
-    { "id": 4, "image": "html.png", "title": "HTML" },
-    { "id": 5, "image": "css.png", "title": "CSS" },
-    { "id": 6, "image": "javascript.png", "title": "JavaScript" },
-    { "id": 7, "image": "figma.png", "title": "Figma" },
-    { "id": 8, "image": "c.png", "title": "C#" }
+    { "id": 4, "image": "c.png", "title": "C#" },
+    { "id": 5, "image": "figma.png", "title": "Figma" },
+    { "id": 6, "image": "html.png", "title": "HTML" },
+    { "id": 7, "image": "css.png", "title": "CSS" },
+    { "id": 8, "image": "javascript.png", "title": "JavaScript" }
 ]
