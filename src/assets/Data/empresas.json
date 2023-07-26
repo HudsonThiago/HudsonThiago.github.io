@@ -2,7 +2,10 @@
     {
         "id": 1,
         "image": "eject.png",
-        "modalImage": "trabalhoModal1.jpg",
+        "modalImage": {
+            "desktopImage": "trabalhoModal1.jpg",
+            "mobileImage": "trabalho.jpg"
+        },
         "title": "EJECT",
         "time": "1 ano e 8 meses",
         "role": ["Assessor de projetos", "Gerente de projetos"],
@@ -11,7 +14,10 @@
     {
         "id": 2,
         "image": "neoenergia_labs.png",
-        "modalImage": "trabalhoModal1.jpg",
+        "modalImage": {
+            "desktopImage": "trabalhoModal1.jpg",
+            "mobileImage": "trabalho.jpg"
+        },
         "title": "Neoenergia Labs",
         "time": "1 ano",
         "role": ["Desenvolvedor fullstack"],

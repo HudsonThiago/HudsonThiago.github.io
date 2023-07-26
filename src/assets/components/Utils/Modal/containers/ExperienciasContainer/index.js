@@ -16,8 +16,8 @@ export default function ExperienciasContainer({ roles = [], time, text }) {
                     <FontAwesomeIcon className="modalIcon" icon={faUserTie} />
                     {roles.length > 1 ? (
                         <ul>
-                            {roles.map((r) => {
-                                return <li>{r}</li>;
+                            {roles.map((r, index) => {
+                                return <li key={index}>{r}</li>;
                             })}
                         </ul>
                     ) : (

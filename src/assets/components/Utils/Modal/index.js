@@ -13,7 +13,13 @@ export const closeModal = (id) => {
     modal.classList.remove("openModal");
 };
 
-export default function Modal({ id, imagem, title, children }) {
+export default function Modal({
+    id,
+    title,
+    children,
+    image = {},
+    mobileImage = {},
+}) {
     const [mouseOut, setMouseOut] = useState(false);
     const [touch, setTouch] = useState(true);
 
@@ -37,7 +43,12 @@ export default function Modal({ id, imagem, title, children }) {
                 onMouseOver={() => setMouseOut(false)}
             >
                 <div className="modalSec45">
-                    <img src={imagem} draggable="false" />
+                    <img className="desktop" src={image} draggable="false" />
+                    <img
+                        className="mobile"
+                        src={mobileImage}
+                        draggable="false"
+                    />
                 </div>
                 <div className="modalSec55">
                     <header className="modalHeader">

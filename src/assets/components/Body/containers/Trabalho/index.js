@@ -37,7 +37,8 @@ export default function Tecnologias() {
                             />
                             <Modal
                                 id={`modalEmpresa-${index}`}
-                                imagem={require(`../../../../images/backgrounds/${i.modalImage}`)}
+                                image={require(`../../../../images/backgrounds/${i.modalImage.desktopImage}`)}
+                                mobileImage={require(`../../../../images/backgrounds/${i.modalImage.mobileImage}`)}
                                 title={i.title}
                             >
                                 <ExperienciasContainer

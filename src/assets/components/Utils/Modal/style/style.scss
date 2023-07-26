@@ -25,6 +25,14 @@
             width: 45%;
             height: 100%;
 
+            .desktop {
+                display: block;
+            }
+
+            .mobile {
+                display: none;
+            }
+
             img {
                 width: 100%;
                 height: 100.2%;
@@ -105,19 +113,28 @@
         .modalContent {
             background-color: var(--white);
             width: 90%;
-            height: 90vh;
-            display: flex;
-            flex-wrap: wrap;
+            height: calc(90vh - 100px);
+            margin-bottom: 100px;
+            display: grid;
+            grid-template-rows: auto minmax(100px, 1fr);
             border-radius: 6px;
             box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
 
             .modalSec45 {
                 width: 100%;
-                height: 20%;
+
+                .desktop {
+                    display: none;
+                }
+
+                .mobile {
+                    display: block;
+                }
 
                 img {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
+                    max-height: 250px;
                     border-top-left-radius: 6px;
                     border-bottom-left-radius: 6px;
                     clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
@@ -133,14 +150,13 @@
             .modalSec55 {
                 box-sizing: border-box;
                 width: 100%;
-                height: 80%;
                 padding: 30px;
                 display: flex;
                 flex-direction: column;
 
                 .modalHeader {
                     width: 100%;
-                    height: 10%;
+                    height: 40px;
                     margin: 0;
                     padding: 0;
                     display: flex;
@@ -169,7 +185,57 @@
 
                 .modalMain {
                     width: 100%;
-                    height: 90%;
+                    height: calc(100% - 40px);
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .darkScreen {
+        .modalContent {
+            .modalSec55 {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+
+                .modalHeader {
+                    width: 100%;
+                    height: 40px;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: space-between;
+
+                    .modalTitle {
+                        font-size: 1.2rem;
+                        color: var(--title);
+                    }
+
+                    .closeButton {
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        font-size: 1.2rem;
+                        color: var(--title);
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .modalMain {
+                    width: 100%;
+                    height: calc(100% - 40px);
                     display: flex;
                     flex-direction: column;
                 }
