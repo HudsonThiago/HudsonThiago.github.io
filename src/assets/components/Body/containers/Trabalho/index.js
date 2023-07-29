@@ -3,13 +3,13 @@ import ItemCard from "../../../Utils/ItemCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Modal from "../../../Utils/Modal";
-import Data from "../../../../Data/empresas.json";
+import Data from "../../../../Data/experiencias.json";
 import { openModal } from "../../../Utils/Modal";
 import ExperienciasContainer from "../../../Utils/Modal/containers/ExperienciasContainer";
 import { formatText } from "../../../Utils/utils";
 
 export default function Tecnologias() {
-    const [empresas, setEmpresas] = useState(Data);
+    const [experiencias, setExperiencias] = useState(Data);
 
     return (
         <div className="box">
@@ -25,21 +25,22 @@ export default function Tecnologias() {
                 </div>
             </header>
             <main className="mainBody">
-                {empresas.map((i, index) => {
+                {experiencias.sort((a,b) => {return b.id - a.id}).map((i, index) => {
                     return (
                         <div key={index}>
                             <ItemCard
                                 type={"image"}
-                                imagem={require(`../../../../images/trabalho/${i.image}`)}
+                                imagem={require(`../../../../images/experiencias/${i.image}`)}
                                 title={i.title}
                                 action={openModal}
-                                idModal={`modalEmpresa-${index}`}
+                                idModal={`modalExperiencia-${index}`}
                             />
                             <Modal
-                                id={`modalEmpresa-${index}`}
+                                id={`modalExperiencia-${index}`}
                                 image={require(`../../../../images/backgrounds/${i.modalImage.desktopImage}`)}
                                 mobileImage={require(`../../../../images/backgrounds/${i.modalImage.mobileImage}`)}
                                 title={i.title}
+                                color={i.color}
                             >
                                 <ExperienciasContainer
                                     roles={i.role}

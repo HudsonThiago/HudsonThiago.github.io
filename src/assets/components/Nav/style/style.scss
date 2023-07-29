@@ -33,6 +33,14 @@
                         filter: drop-shadow(0px 2px 1px #00000066);
                     }
                 }
+
+                .navButton:hover {
+                    .navIcon {
+                        color: var(--red2);
+                        transition: 0.2s;
+                    }
+                }
+
                 .navButton.active {
                     background-color: var(--white);
                     box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;

@@ -24,13 +24,26 @@
         .modalSec45 {
             width: 45%;
             height: 100%;
+            position: relative;
 
-            .desktop {
-                display: block;
+            .frame1 {
+                width: 100%;
+                height: 100.2%;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                clip-path: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
+                position: absolute;
+                z-index: 2;
             }
 
-            .mobile {
-                display: none;
+            .frame2 {
+                width: 100%;
+                height: 100.2%;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                clip-path: polygon(60% 0, 0% 100%, 92% 100%);
+                position: absolute;
+                z-index: 1;
             }
 
             img {
@@ -45,6 +58,16 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
+                position: relative;
+                z-index: 3;
+            }
+
+            .desktop {
+                display: block;
+            }
+
+            .mobile {
+                display: none;
             }
         }
 
@@ -104,8 +127,8 @@
 }
 
 .openModal {
-    visibility: visible !important;
-    opacity: 1 !important;
+    visibility: visible;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 800px) {
@@ -122,13 +145,29 @@
 
             .modalSec45 {
                 width: 100%;
-
-                .desktop {
-                    display: none;
+                height: 100%;
+                position: relative;
+    
+                .frame1 {
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    border-bottom-left-radius: 0px;
+                    clip-path: polygon(100% 0, 0 46%, 100% 100%);
+                    position: absolute;
+                    z-index: 1;
                 }
 
-                .mobile {
-                    display: block;
+                .frame2 {
+                    width: 100%;
+                    height: 100%;
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    border-bottom-left-radius: 0px;
+                    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+                    position: absolute;
+                    z-index: 2;
                 }
 
                 img {
@@ -136,7 +175,8 @@
                     height: auto;
                     max-height: 250px;
                     border-top-left-radius: 6px;
-                    border-bottom-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    border-bottom-left-radius: 0px;
                     clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
                     -webkit-touch-callout: none;
                     -webkit-user-select: none;
@@ -144,6 +184,16 @@
                     -moz-user-select: none;
                     -ms-user-select: none;
                     user-select: none;
+                    position:relative;
+                    z-index: 3;
+                }
+
+                .desktop {
+                    display: none;
+                }
+
+                .mobile {
+                    display: block;
                 }
             }
 

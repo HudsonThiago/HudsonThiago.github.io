@@ -1,51 +1,51 @@
 .darkScreen {
-  background-color: #00000099;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .darkScreen .modalContent {
   background-color: var(--white);
   width: 700px;
   height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
-  -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-          box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
-
 .darkScreen .modalContent .modalSec45 {
   width: 45%;
   height: 100%;
+  position: relative;
 }
-
-.darkScreen .modalContent .modalSec45 .desktop {
-  display: block;
+.darkScreen .modalContent .modalSec45 .frame1 {
+  width: 100%;
+  height: 100.2%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
+  position: absolute;
+  z-index: 2;
 }
-
-.darkScreen .modalContent .modalSec45 .mobile {
-  display: none;
+.darkScreen .modalContent .modalSec45 .frame2 {
+  width: 100%;
+  height: 100.2%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-clip-path: polygon(60% 0, 0% 100%, 92% 100%);
+          clip-path: polygon(60% 0, 0% 100%, 92% 100%);
+  position: absolute;
+  z-index: 1;
 }
-
 .darkScreen .modalContent .modalSec45 img {
   width: 100%;
   height: 100.2%;
@@ -56,93 +56,67 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
+  position: relative;
+  z-index: 3;
 }
-
+.darkScreen .modalContent .modalSec45 .desktop {
+  display: block;
+}
+.darkScreen .modalContent .modalSec45 .mobile {
+  display: none;
+}
 .darkScreen .modalContent .modalSec55 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 55%;
   height: 100%;
   padding: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .darkScreen .modalContent .modalSec55 .modalHeader {
   width: 100%;
   height: 15%;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-
 .darkScreen .modalContent .modalSec55 .modalHeader .modalTitle {
   font-size: 1.2rem;
   color: var(--title);
 }
-
 .darkScreen .modalContent .modalSec55 .modalHeader .closeButton {
   width: 30px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 1.2rem;
   color: var(--title);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-
 .darkScreen .modalContent .modalSec55 .modalHeader .closeButton:hover {
   color: var(--red1);
 }
-
 .darkScreen .modalContent .modalSec55 .modalMain {
   width: 100%;
   height: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--text);
 }
 
 .openModal {
-  visibility: visible !important;
-  opacity: 1 !important;
+  visibility: visible;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 800px) {
@@ -151,16 +125,53 @@
     width: 90%;
     height: calc(90vh - 100px);
     margin-bottom: 100px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: auto minmax(100px, 1fr);
-        grid-template-rows: auto minmax(100px, 1fr);
+    grid-template-rows: auto minmax(100px, 1fr);
     border-radius: 6px;
-    -webkit-box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
-            box-shadow: 1px 1px 2px #00000066, 2px 2px 5px #00000066;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 5px rgba(0, 0, 0, 0.4);
   }
   .darkScreen .modalContent .modalSec45 {
     width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .darkScreen .modalContent .modalSec45 .frame1 {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+    -webkit-clip-path: polygon(100% 0, 0 46%, 100% 100%);
+            clip-path: polygon(100% 0, 0 46%, 100% 100%);
+    position: absolute;
+    z-index: 1;
+  }
+  .darkScreen .modalContent .modalSec45 .frame2 {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    position: absolute;
+    z-index: 2;
+  }
+  .darkScreen .modalContent .modalSec45 img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    position: relative;
+    z-index: 3;
   }
   .darkScreen .modalContent .modalSec45 .desktop {
     display: none;
@@ -168,51 +179,22 @@
   .darkScreen .modalContent .modalSec45 .mobile {
     display: block;
   }
-  .darkScreen .modalContent .modalSec45 img {
-    width: 100%;
-    height: auto;
-    max-height: 250px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
   .darkScreen .modalContent .modalSec55 {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     padding: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .darkScreen .modalContent .modalSec55 .modalHeader {
     width: 100%;
     height: 40px;
     margin: 0;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   .darkScreen .modalContent .modalSec55 .modalHeader .modalTitle {
     font-size: 1.2rem;
@@ -221,15 +203,9 @@
   .darkScreen .modalContent .modalSec55 .modalHeader .closeButton {
     width: 30px;
     height: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 1.2rem;
     color: var(--title);
     background-color: transparent;
@@ -239,48 +215,27 @@
   .darkScreen .modalContent .modalSec55 .modalMain {
     width: 100%;
     height: calc(100% - 40px);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media only screen and (max-width: 400px) {
   .darkScreen .modalContent .modalSec55 {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .darkScreen .modalContent .modalSec55 .modalHeader {
     width: 100%;
     height: 40px;
     margin: 0;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   .darkScreen .modalContent .modalSec55 .modalHeader .modalTitle {
     font-size: 1.2rem;
@@ -289,15 +244,9 @@
   .darkScreen .modalContent .modalSec55 .modalHeader .closeButton {
     width: 30px;
     height: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 1.2rem;
     color: var(--title);
     background-color: transparent;
@@ -307,13 +256,7 @@
   .darkScreen .modalContent .modalSec55 .modalMain {
     width: 100%;
     height: calc(100% - 40px);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

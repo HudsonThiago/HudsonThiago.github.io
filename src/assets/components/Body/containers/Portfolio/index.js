@@ -6,7 +6,6 @@ import Modal from "../../../Utils/Modal";
 import Data from "../../../../Data/portfolio.json";
 import PortfolioContainer from "../../../Utils/Modal/containers/PortfolioContainer";
 import { openModal } from "../../../Utils/Modal";
-import { formatText } from "../../../Utils/utils";
 
 export default function Portfolio() {
     return (
@@ -25,19 +24,20 @@ export default function Portfolio() {
                         <div key={index}>
                             <ItemCard
                                 type={"image"}
-                                imagem={require(`../../../../images/trabalho/${portfolio.image}`)}
+                                imagem={require(`../../../../images/portfolio/${portfolio.image}`)}
                                 title={portfolio.title}
                                 action={openModal}
-                                idModal={"modal-1"}
+                                idModal={"modalPortfolio-"+index}
                             />
                             <Modal
-                                id={"modal-1"}
+                                id={"modalPortfolio-"+index}
                                 image={require(`../../../../images/backgrounds/${portfolio.modalImage.desktopImage}`)}
                                 mobileImage={require(`../../../../images/backgrounds/${portfolio.modalImage.mobileImage}`)}
-                                title={"EJECT"}
+                                title={portfolio.title}
+                                color={portfolio.color}
                             >
                                 <PortfolioContainer
-                                    text={formatText(portfolio.text)}
+                                    portfolio={portfolio}
                                 />
                             </Modal>
                         </div>

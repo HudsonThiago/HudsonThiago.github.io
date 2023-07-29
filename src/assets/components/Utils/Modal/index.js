@@ -17,6 +17,7 @@ export default function Modal({
     id,
     title,
     children,
+    color="#8B5240",
     image = {},
     mobileImage = {},
 }) {
@@ -43,6 +44,8 @@ export default function Modal({
                 onMouseOver={() => setMouseOut(false)}
             >
                 <div className="modalSec45">
+                    <div className="frame1" style={{backgroundColor: color+"99"}}></div>
+                    <div className="frame2" style={{backgroundColor: color+"E6"}}></div>
                     <img className="desktop" src={image} draggable="false" />
                     <img
                         className="mobile"

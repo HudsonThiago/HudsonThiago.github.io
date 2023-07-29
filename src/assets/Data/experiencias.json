@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "image": "eject.png",
+        "modalImage": {
+            "desktopImage": "ejectDesktop.png",
+            "mobileImage": "ejectMobile.png"
+        },
+        "title": "EJECT",
+        "color": "#EEBE06",
+        "time": "1 ano e 8 meses",
+        "role": ["Assessor de projetos", "Gerente de projetos"],
+        "text": "No final de 2020 fui efetivado na Empresa Júnior de Ciências e Tecnologia (EJECT) na célula de projetos como desenvolvedor back-end. A EJECT é uma empresa que visa entregar soluções web. Seus serviços incluem: concepção e planejamento de projetos, marketing digital, E-commerces, sites e sistemas web.\nDurante meu período de efetivação, aprendi e me desenvolvi com o framework django, tive contato com o scrum, e tive a oportunidade de ganhar experiência real de mercado. Além disso, após um tempo de efetivação, fui selecionado para o cargo de gerência de projetos. Fiquei mais imerso na parte de planejamento dos projeto e da empresa como um todo.\nA EJECT foi fundamental para o meu amadurecimento pessoal e profissional, lá pude dar o primeiro passo na parte profisisonal e ganhei mais coragem para aceitar desafios e me enxergar em posições de liderança."
+    },
+    {
+        "id": 2,
+        "image": "neoenergia_labs.png",
+        "modalImage": {
+            "desktopImage": "neoenergiaDesktop.png",
+            "mobileImage": "neoenergiaMobile.png"
+        },
+        "title": "Neoenergia Labs",
+        "color": "#5C881A",
+        "time": "1 ano",
+        "role": ["Desenvolvedor fullstack"],
+        "text": "Em 2022, fui selecionado para um contrato de um ano como bolsista, do grupo de desenvolvimento de software, para participar do projeto de inovação da Neoenergia em parceria com o IMD. O objetivo desse projeto foi acelerar o desenvolvimento de soluções para problemas reais da distribuidora.\nOs bolsistas, graduandos da UFRN, foram selecionados em 3 grupos, sendo eles: desenvolvimento de software, design e analytics. Durante o período da bolsa, tive contato com react (front) e .net (back). Ambas já eram tecnologias que já tinha um pequeno domínio, principalmente no front. porém, pude me aperfeiçoar ainda mais.\nComo resultado, pudemos entregar um MVP de um sistema e um sistema de ciclo de vida de religadores. Ao todo, os bolsistas entregaram 8 projetos à Neoenergia."
+    }
+]
