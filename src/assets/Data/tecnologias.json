@@ -1,10 +1,13 @@
 [
-    { "id": 1, "image": "django.png", "title": "Django | Django Rest" },
-    { "id": 2, "image": "react.png", "title": "React" },
-    { "id": 3, "image": "git.png", "title": "Git & GitHub" },
-    { "id": 4, "image": "c.png", "title": "C#" },
-    { "id": 5, "image": "figma.png", "title": "Figma" },
-    { "id": 6, "image": "html.png", "title": "HTML" },
-    { "id": 7, "image": "css.png", "title": "CSS" },
-    { "id": 8, "image": "javascript.png", "title": "JavaScript" }
+    { "id": 1, "image": "react.png", "title": "React" },
+    { "id": 2, "image": "tailwind.png", "title": "Tailwind" },
+    { "id": 3, "image": "typescript.png", "title": "Typescript" },
+    { "id": 4, "image": "spring.png", "title": "Spring Framework" },
+    { "id": 5, "image": "django.png", "title": "Django | Django Rest" },
+    { "id": 6, "image": "git.png", "title": "Git & GitHub" },
+    { "id": 7, "image": "c.png", "title": "C#" },
+    { "id": 8, "image": "figma.png", "title": "Figma" },
+    { "id": 9, "image": "html.png", "title": "HTML" },
+    { "id": 10, "image": "css.png", "title": "CSS" },
+    { "id": 11, "image": "javascript.png", "title": "JavaScript" }
 ]
