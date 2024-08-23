@@ -1,32 +1,35 @@
 {
   "files": {
     "main.css": "/static/css/main.39ac3729.css",
-    "main.js": "/static/js/main.d1566ed1.js",
+    "main.js": "/static/js/main.9640ad5c.js",
     "static/js/787.3b86ad0b.chunk.js": "/static/js/787.3b86ad0b.chunk.js",
     "static/media/ejectMobile.png": "/static/media/ejectMobile.e726b9a7feebae238e95.png",
     "static/media/ejectDesktop.png": "/static/media/ejectDesktop.11a555087e4613d3fcb6.png",
+    "static/media/profile.jpg": "/static/media/profile.ea8bfbc5f20fe6159060.jpg",
     "static/media/trabalhoModal1.jpg": "/static/media/trabalhoModal1.415b9236d0c667190c24.jpg",
     "static/media/neoenergiaMobile.png": "/static/media/neoenergiaMobile.77d2dce1cca059a29723.png",
     "static/media/neoenergiaDesktop.png": "/static/media/neoenergiaDesktop.d52895836380dcf67aaa.png",
-    "static/media/curriculo.pdf": "/static/media/curriculo.e6de01f5f809e546efc9.pdf",
+    "static/media/curriculo.pdf": "/static/media/curriculo.787db0412391220f3bf1.pdf",
     "static/media/neoenergia_labs.png": "/static/media/neoenergia_labs.ad1777baecb096e3cd6c.png",
-    "static/media/profile.jpg": "/static/media/profile.5512d95d0deaabf1364f.jpg",
+    "static/media/spring.png": "/static/media/spring.7792fb6988055791778e.png",
     "static/media/blender.png": "/static/media/blender.7c074de59623026ea3d9.png",
     "static/media/django.png": "/static/media/django.a66ffa8038525df839cc.png",
+    "static/media/typescript.png": "/static/media/typescript.fa0f5b9572b86c3b96c3.png",
     "static/media/eject.png": "/static/media/eject.0333f84f5906be519546.png",
     "static/media/javascript.png": "/static/media/javascript.06db899511002443efde.png",
     "static/media/unity.png": "/static/media/unity.d4f18076cdb4b9f695d6.png",
     "static/media/genesis.png": "/static/media/genesis.e3e80d4084171d4645fc.png",
     "static/media/python.png": "/static/media/python.1dc59ead861aaa6d848a.png",
+    "static/media/tailwind.png": "/static/media/tailwind.ebc9ceeb694a47824b26.png",
     "static/media/css.png": "/static/media/css.4a513626f10b8419c668.png",
     "static/media/react.png": "/static/media/react.16427f7cb38d0bc1ae93.png",
     "index.html": "/index.html",
     "main.39ac3729.css.map": "/static/css/main.39ac3729.css.map",
-    "main.d1566ed1.js.map": "/static/js/main.d1566ed1.js.map",
+    "main.9640ad5c.js.map": "/static/js/main.9640ad5c.js.map",
     "787.3b86ad0b.chunk.js.map": "/static/js/787.3b86ad0b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39ac3729.css",
-    "static/js/main.d1566ed1.js"
+    "static/js/main.9640ad5c.js"
   ]
 }
